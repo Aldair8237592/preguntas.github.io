@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas para la sucia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Preguntas para la sucia</h1>
+        <form id="quizForm">
+            <!-- Pregunta 1 -->
+            <div class="question">
+                <label for="question1">Si yo tuviera la oportunidad de ser un animal, ¿qué animal escogerías?</label>
+                <div>
+                    <input type="radio" id="animal1" name="question1" value="monito" required>
+                    <label for="animal1">monito</label>
+                </div>
+                <div>
+                    <input type="radio" id="animal2" name="question1" value="perro">
+                    <label for="animal2">perro</label>
+                </div>
+                <div>
+                    <input type="radio" id="animal3" name="question1" value="gato">
+                    <label for="animal3">gato</label>
+                </div>
+                <div>
+                    <input type="radio" id="animal4" name="question1" value="Otro">
+                    <label for="animal4">Otro</label>
+                </div>
+                <div>
+                    <input type="text" id="animalOther" name="animalOther" placeholder="Escribe el animal que quisieras">
+                </div>
+            </div>
+            <!-- Pregunta 2 -->
+            <div class="question">
+                <label for="question2">¿Me quieres?</label>
+                <div>
+                    <input type="radio" id="love1" name="question2" value="Siiiiiii" required>
+                    <label for="love1">Siiiiiii</label>
+                </div>
+                <div>
+                    <input type="radio" id="love2" name="question2" value="Simón">
+                    <label for="love2">Simón</label>
+                </div>
+                <div>
+                    <input type="radio" id="love3" name="question2" value="No bitch">
+                    <label for="love3">No bitch</label>
+                </div>
+                <div>
+                    <input type="radio" id="love4" name="question2" value="Otro">
+                    <label for="love4">Otro</label>
+                </div>
+                <div>
+                    <input type="text" id="loveOther" name="loveOther" placeholder="Escribe tu respuesta sucia">
+                </div>
+            </div>
+            <!-- Pregunta 3 -->
+            <div class="question">
+                <label for="question3">¿Cuándo es mi cumpleaños?</label>
+                <div>
+                    <input type="radio" id="birthday1" name="question3" value="2 de mayo" required>
+                    <label for="birthday1">2 de mayo</label>
+                </div>
+                <div>
+                    <input type="radio" id="birthday2" name="question3" value="17 de agosto">
+                    <label for="birthday2">17 de agosto</label>
+                </div>
+                <div>
+                    <input type="radio" id="birthday3" name="question3" value="25 de junio">
+                    <label for="birthday3">25 de junio</label>
+                </div>
+                <div>
+                    <input type="radio" id="birthday4" name="question3" value="Otra">
+                    <label for="birthday4">Otra</label>
+                </div>
+                <div>
+                    <input type="text" id="birthdayOther" name="birthdayOther" placeholder="Escribe mi fecha de cumpleaños">
+                </div>
+            </div>
+            <!-- Pregunta 4 -->
+            <div class="question">
+                <label for="question4">¿Me quieres poquito o mucho?</label>
+                <div>
+                    <input type="radio" id="loveAmount1" name="question4" value="Mucho" required>
+                    <label for="loveAmount1">Mucho</label>
+                </div>
+                <div>
+                    <input type="radio" id="loveAmount2" name="question4" value="Demasiado">
+                    <label for="loveAmount2">Demasiado</label>
+                </div>
+                <div>
+                    <input type="radio" id="loveAmount3" name="question4" value="No te quiero">
+                    <label for="loveAmount3">No te quiero</label>
+                </div>
+                <div>
+                    <input type="radio" id="loveAmount4" name="question4" value="Otra">
+                    <label for="loveAmount4">Otra</label>
+                </div>
+                <div>
+                    <input type="text" id="loveAmountOther" name="loveAmountOther" placeholder="Escribe tu respuesta">
+                </div>
+            </div>
+            <!-- Pregunta 5 -->
+            <div class="question">
+                <label for="question5">¿Te bañas?</label>
+                <div>
+                    <input type="checkbox" id="bath1" name="question5[]" value="No">
+                    <label for="bath1">No</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bath3" name="question5[]" value="No me gusta bañarme">
+                    <label for="bath3">No me gusta bañarme</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bath4" name="question5[]" value="Nooooo">
+                    <label for="bath4">Nooooo</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bath6" name="question5[]" value="Otra">
+                    <label for="bath6">Otra</label>
+                </div>
+                <div>
+                    <input type="text" id="bathOther" name="bathOther" placeholder="Escribe si te bañas">
+                </div>
+            </div>
+            <!-- Botón de envío -->
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas a la sucia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: none;
+            margin: 0;
+        }
+        header .logo-title {
+            display: flex;
+            align-items: center;
+        }
+        header .logo-title img {
+            margin-right: 0.25rem; 
+            height: 50px; 
+        }
+        header .logo-title h1 {
+            margin: 0;
+            font-size: 1rem;
+            margin-left: 0.25rem; 
+        }
+        header nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #000;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #000;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            background: #21cde0;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 30%;
+            box-sizing: border-box;
+        }
+        .service h2 {
+            margin-top: 0;
+        }
+        .contact {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .contact a.button {
+            background: #fff;
+            color: #000;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .contact a.button:hover {
+            background: #555;
+        }
+        @media (max-width: 768px) {
+            header .logo-title img {
+                height: 70px; 
+            }
+            header .logo-title h1 {
+                font-size: 0.8rem; 
+            }
+            .service {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <h1>Suciaaaaaaa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="pregunta.html">Preguntas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="hero">
+            <h1>Bienvenido <span id="user-name"></span></h1>
+            <p>Preguntas para chismosear </p>
+            <p>...</p>
+            <p>Hola sucia como ya abras leido esto son preguntas pa chismosear asi que responde bien, presiona en preguntas y no ahi marcha atras ya sabes</p>
+        </section>
+        <nav class="contact">
+            <ul>
+            <li><a href="pregunta.html" class="button">Preguntas</a></li>
+            </ul>
+ 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const storedUsername = localStorage.getItem("username");
+
+            if (storedUsername) {
+                document.getElementById("user-name").textContent = storedUsername;
+            }
+        });
+    </script>
+</body>
+</html>
